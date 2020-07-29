@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/airbnb.ico" type="image/x-icon">
+    <!-- 폰트오썸 아이콘 CDN -->
+    <script src="https://kit.fontawesome.com/173255a2a2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>체험</title>
+</head>
+<body>
+    <div id="join-popup">
+        <div class="join-window">
+            <div class="close-button">
+                <button onclick="join_close()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form>
+                <button type="submit" class="fbook">
+                    <i class="fab fa-facebook-f icon1"></i> 
+                    &nbsp; 페이스북 계정으로 회원 가입 
+                </button>
+                <button type="submit" class="google">
+                    <i class="fab fa-google"></i> 
+                    &nbsp;구글 계정으로 회원가입
+                </button>
+                <div class="line-combo">
+                    <div class="line-left"></div>
+                    <span>또는</span>
+                    <div class="line-right"></div>
+                </div>
+                <button type="submit" class="email">
+                    <i class="far fa-envelope"></i> 
+                    &nbsp;이메일로 회원 가입
+                </button>
+                <hr>
+                <p class="bottom-text"> 
+                    이미 에어비엔비 계정이 있나요? 
+                    <a href="#" onclick="openLogin(); join_close();">로그인</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <div id="login">
+        <form class="modal-content">
+            <div class="container">
+                <div class="close-button">
+                <button onclick="closeLogin();">
+                    <i class="fas fa-times"></i>
+                </button>
+                </div>
+                <button type="submit" class="fbook btn">
+                    <i class="fab fa-facebook-f icon1"></i> 
+                    &nbsp; 페이스북 계정으로 로그인 
+                </button>
+                <button type="submit" class="google btn">
+                    <i class="fab fa-google"></i> 
+                    &nbsp;구글 계정으로 로그인
+                </button>
+                <div class="line-combo">
+                    <div class="line-left"></div>
+                    <span>또는</span>
+                    <div class="line-right"></div>
+                </div>
+                <div class="email">
+                    <input type="text" class="text_input" placeholder="이메일 주소">
+                    <div>
+                        <i class="far fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="email">
+                    <input type="password" class="text_input" placeholder="비밀번호">
+                    <div>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                </div>
+                <label>
+                    <a href="#" class="pw">
+                        <div></div>
+                        <span>비밀번호 저장</span>
+                    </a> 
+                    <a href="#" class="pw">비밀번호 보기</a>
+                    <a href="#" class="pw">전화번호로 로그인</a>
+                </label>
+                <div>
+                    <button type="submit" class="loginBtn btn">로그인</button>
+                </div>
+                <hr>
+                <p class="bottom-text"> 
+                    에어비엔비 계정이 없으세요? 
+                    <a href="#" onclick="join_open(); closeLogin();">회원 가입</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <nav id="sub-navi">
+        <ul>
+            <li><a href="index.html"><i class="fab fa-airbnb"></i>airbnb</a></li>
+        </ul>
+        <ul>
+            <a href="#">
+                <li>여행지 추가</li>
+                <li>날짜 추가</li>
+                <li><i class="fas fa-search"></i></li>
+            </a>
+        </ul>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fas fa-globe"></i>
+                    <i class="fas fa-angle-down"></i>
+                </a>
+            </li>
+            <li><a href="#">도움말</a></li>
+            <li><a href="#" onclick="join_open(); closeLogin();">회원 가입</a></li>
+        </ul>
+    </nav>
+    <main id="sub-page">
+        <div>에어비앤비 체험</div>
+        <h1>현지인이 호스팅하는 하나뿐인 체험</h1>
+        <section id="info">
+            <div class="info"></div>
+            <div class="info">
+                <p>코로나바이러스 감염증(코로나19)으로 인한 에어비앤비 체험 일시 중지</p>
+                <p>에어비앤비 커뮤니티의 건강과 안전을 위해 에어비앤비 체험 운영을 2020년 4월 30일까지 잠시 중단합니다. 예약하기에 앞서 도움말 센터를 방문하여 코로나19 관련 최신 업데이트 사항을 확인하세요</p>
+                <a href="#"><span>자세히 알아보기</span></a>
+            </div>
+        </section>
+    </main>
+    
+    <section id="exp">
+        <div class="grid">
+            <div class="item">
+                <img src="./img/쿠킹.jpg" alt="쿠킹">
+                <div>쿠킹</div>
+            </div>
+            <div class="item">
+                <img src="./img/동물.jpg" alt="동물">
+                <div>동물</div>
+            </div>
+            <div class="item">
+                <img src="./img/어드벤처.jpg" alt="어드벤쳐">
+                <div>어드벤처</div>
+            </div>
+            <div class="item">
+                <span class="t1">3000개 이상의 체험</span><br>
+                <span class="t2">쿠킹</span><br>
+                <span class="t3">가족처럼 따스한 환대를 받으며 현지인과 함께 요리를 만들고 즐겨보세요.</span>
+            </div>
+            <div class="item">
+                <span class="t1">1000개 이상의 체험</span><br>
+                <span class="t2">동물</span><br>
+                <span class="t3">동물과 동물 보호 운동가와 함께하는 마법 같은 체험
+            </div>
+            <div class="item">
+                <span class="t1">500개 이상의 체험</span><br>
+                <span class="t2">어드벤처</span><br>
+                <span class="t3">독특한 장소로 떠나는 특별한 여정 - 모든 것이 준비되어 있으니 걱정 없이 떠나세요.</span>
+            </div>
+        </div>
+
+        <div class="grid2">
+            <h3>전 세계의 에어비앤비 호스트를 소개합니다.</h3>
+            <a href="#" class="host">
+                <img src="./img/DJ.jpg">
+                <div>
+                    <div class="text-1">DJ와 함께하는 음악 역사 문화 투어</div>
+                    <span class="text-2">Havana, Cuba</span>
+                </div>
+            </a>
+            <a href="#" class="host">
+                <img src="./img/요리.jpg">
+                <div>
+                    <div class="text-1">원주민 요리사와 함께 멕시코 전통소스 만들기</div>
+                    <span class="text-2">멕시코, 멕시코시티</span>
+                </div>
+            </a>
+            <a href="#" class="host">
+                <img src="./img/사막.jpg">
+                <div>
+                    <div class="text-1">현지 가이드와 함께하는 경이로운 사막 투어</div>
+                    <span class="text-2">오만, 무스카트</span>
+                </div>
+            </a>
+            <a href="#" class="host">
+                <img src="./img/말 치료사.jpg">
+                <div>
+                    <div class="text-1">말 치료사의 지도를 받으며 말과 교감하기</div>
+                    <span class="text-2">스페인, 바르셀로나</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <hr>
+    <section id="footer">
+        <div class="foot">
+            <div>
+                <h4>소개</h4>
+                <li><a href="#">다양성 및 소속감</a></li>
+                <li><a href="#">접근성</a></li>
+                <li><a href="#">신뢰와 안전</a></li>
+                <li><a href="#">Airbnb Citizen</a></li>
+                <li><a href="#">뉴스룸</a></li>
+            </div>
+            <div>
+                <h4>커뮤니티</h4>
+                <li><a href="#">에어비앤비 매거진</a></li>
+                <li><a href="#">에어비앤비 비즈니스 프로그램</a></li>
+                <li><a href="#">친구 초대하기</a></li>
+                <li><a href="#">채용정보</a></li>
+            </div>
+            <div>
+                <h4>호스팅하기</h4>
+                <li><a href="#">숙소 호스팅</a></li>
+                <li><a href="#">체험 호스팅</a></li>
+                <li><a href="#">책임감 있는 호스팅</a></li>
+                <li><a href="#">Open Homes</a></li>
+                <li><a href="#">올림픽</a></li>
+                <li><a href="#">자료 센터</a></li>
+            </div>
+            <div>
+                <h4>에어비앤비 지원</h4>
+                <li><a href="#">도움말 센터</a></li>
+                <li><a href="#">에어비앤비 이웃 민원 지원</a></li>
+            </div>
+        </div>
+        <hr>
+        <div class="under">
+            <div>
+                <div>&copy;2020 Airbnb, Inc. All rights reserved</div>
+                <a href="#">개인정보 처리방침</a> .
+                <a href="#">이용약관</a> .
+                <a href="#">사이트맵</a> .
+                <a href="#">한국의 변경된 환불정책</a> .
+            </div>
+            <div class="link">
+                <span>
+                    <a href="#" class="lang"><i class="fas fa-globe">&nbsp;</i>한국어</a>
+                    <a href="#" class="lang"><i class="fas fa-won-sign">&nbsp;</i>KRW</a>
+                </span>
+                <span>
+                    <a href="#" class="lang"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="lang"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="lang"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="lang"><i class="fas fa-blog"></i></a>
+                    <a href="#" class="lang"><i class="fas fa-pencil-alt"></i></a>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/airbnb.js"></script>
+
+</body>
+</html>
